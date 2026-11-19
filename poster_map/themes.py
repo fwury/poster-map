@@ -101,6 +101,47 @@ THEMES: dict[str, dict] = {
                   "tertiary": "#383838", "residential": "#4a4a4a", "service": "#8a8a8a",
                   "path": "#b0b0b0"},
     },
+    # ---- Room-matched: beige + forest green ---------------------------------
+    # Warm beige paper, forest-green streets, soft sage water.
+    "fern": {
+        "background": "#ebe3d2", "page": "#ebe3d2",
+        "water": "#b9c4b0", "green": "#dcdbc2", "buildings": "#e3dac8",
+        "waterway": "#b9c4b0", "rail": "#a3a893", "frame": "#24402c", "text": "#24402c",
+        "road_default": "#3f6147",
+        "roads": {"motorway": "#1d3324", "primary": "#22402b", "secondary": "#294a32",
+                  "tertiary": "#32553b", "residential": "#3f6147", "service": "#7d917f",
+                  "path": "#a7b3a2"},
+    },
+    # Inverse: deep forest-green ground with cream/beige streets.
+    "evergreen": {
+        "background": "#1f3428", "page": "#1f3428",
+        "water": "#15251c", "green": "#24392d", "buildings": "#243a2e",
+        "waterway": "#15251c", "rail": "#4d6152", "frame": "#efe5cf", "text": "#efe5cf",
+        "road_default": "#cfc6ac",
+        "roads": {"motorway": "#f6eedb", "primary": "#f1e8d2", "secondary": "#eae0c7",
+                  "tertiary": "#e0d6bb", "residential": "#c9c0a5", "service": "#8f9480",
+                  "path": "#68766a"},
+    },
+    # Pale linen; two-tone streets: forest-green arteries over oat-beige side streets.
+    "linen": {
+        "background": "#f3eee3", "page": "#f3eee3",
+        "water": "#ccd5c5", "green": "#e4e5d2", "buildings": "#ebe5d8",
+        "waterway": "#ccd5c5", "rail": "#bdb7a6", "frame": "#2b4634", "text": "#2b4634",
+        "road_default": "#b8ab90",
+        "roads": {"motorway": "#1f3a29", "primary": "#264431", "secondary": "#2f4f3a",
+                  "tertiary": "#5e7560", "residential": "#b5a88c", "service": "#cdc3ad",
+                  "path": "#ddd5c4"},
+    },
+    # Sand-beige land, a solid deep pine-green lake, dark green-grey streets.
+    "pine": {
+        "background": "#e8dfcc", "page": "#e8dfcc",
+        "water": "#2e4a3a", "green": "#d4d2b6", "buildings": "#ded5c1",
+        "waterway": "#2e4a3a", "rail": "#a39f8a", "frame": "#2e4a3a", "text": "#2e4a3a",
+        "road_default": "#3e4d43",
+        "roads": {"motorway": "#1e2a23", "primary": "#233029", "secondary": "#29372f",
+                  "tertiary": "#313f37", "residential": "#3e4d43", "service": "#7d867c",
+                  "path": "#a6aa9c"},
+    },
 }
 
 

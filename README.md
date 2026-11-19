@@ -40,7 +40,7 @@ options in a YAML file or with `--set dotted.key=value`:
 | Layers | `layers.buildings=true`, `layers.green=false`, `layers.rail=false`, `layers.water=false` |
 | Optional text | `text.enabled=true text.title=Toronto` (off by default) |
 
-Built-in themes: midnight, paper, noir, blush, blueprint, terracotta, sage, neon, gallery.
+Built-in themes: midnight, paper, noir, blush, blueprint, terracotta, sage, neon, gallery, and four beige / forest-green room themes: fern, evergreen, linen, pine.
 
 Line widths are in points on paper (1 pt = 1/72 in), so they print at the same
 thickness whatever the map scale.
