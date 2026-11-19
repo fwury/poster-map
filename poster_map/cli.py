@@ -27,7 +27,10 @@ def build(cfg: dict, log=print) -> Path:
         proj = Projection(lat0, lon0)
         gw = proj.fwd(e, lat0)[0] - proj.fwd(w, lat0)[0]
         gh = proj.fwd(lon0, n)[1] - proj.fwd(lon0, s)[1]
-        scale = max(fw / gw, fh / gh)  # cover the frame
+        fit = a.get("fit", "contain")
+        # contain: the whole bbox is visible (extra area shows on the long side)
+        # cover:   the frame is filled with the bbox (one axis gets cropped)
+        scale = max(fw / gw, fh / gh) if fit == "cover" else min(fw / gw, fh / gh)
     else:
         if a.get("center"):
             lat0, lon0 = map(float, a["center"])

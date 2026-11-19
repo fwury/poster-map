@@ -1,0 +1,31 @@
+# Old Toronto (pre-amalgamation city) — landscape, label-free, "pine" theme.
+# Render:  python -m poster_map configs/toronto-old.yaml --preview
+output: output/toronto-old-toronto-pine.pdf
+
+area:
+  # west: Humber River · east: Victoria Park Ave · north: Wilson Ave / York Mills Rd · south: Toronto Islands
+  bbox: [43.607, -79.505, 43.745, -79.286]
+  fit: contain          # show the whole box; the wider landscape frame adds a little on each side
+
+data:
+  source: pbf
+  pbf: https://download.bbbike.org/osm/bbbike/Toronto/Toronto.osm.pbf
+
+page:
+  size: 24x18in
+  orientation: landscape
+  margin: 0.75in
+
+text:
+  enabled: false
+
+theme: pine
+
+# At ~1:36,600 the default widths are a bit heavy; thin the minor streets
+# so the arterial grid reads clearly.
+roads:
+  tiers:
+    service:     {width: 0.20}
+    residential: {width: 0.40}
+    tertiary:    {width: 0.75}
+    secondary:   {width: 1.10}

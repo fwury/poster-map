@@ -17,7 +17,8 @@ DEFAULTS: dict = {
         "center": None,         # [lat, lon]; wins over `place`
         "width_m": 8000,        # horizontal ground extent of the map frame (metres)
         "bbox": None,           # [south, west, north, east]; overrides center/width.
-                                # The frame is filled ("cover"), so one axis may be cropped.
+        "fit": "contain",       # with bbox: contain = show all of it (extra area on the
+                                # long side); cover = fill the frame (crop one axis)
         "shape": "rect",        # rect | circle
         "rotation_deg": 0,      # rotate the map clockwise (e.g. align with a street grid)
     },

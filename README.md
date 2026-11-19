@@ -30,7 +30,7 @@ options in a YAML file or with `--set dotted.key=value`:
 
 | Knob | Example |
 |---|---|
-| Area | `area.center=[43.66,-79.39]`, `area.place="Paris"`, `area.width_m=6000`, `area.bbox=[s,w,n,e]` |
+| Area | `area.center=[43.66,-79.39]`, `area.place="Paris"`, `area.width_m=6000`, `area.bbox=[s,w,n,e]` with `area.fit=contain` (show it all) or `cover` (fill the frame) |
 | Shape / rotation | `area.shape=circle`, `area.rotation_deg=16.7` |
 | Paper | `page.size=24x36in` (or `A2`, `50x70cm`), `page.orientation=landscape`, `page.margin=0` (full bleed) |
 | Frame line | `page.frame_width=2 page.frame_offset=8` |
