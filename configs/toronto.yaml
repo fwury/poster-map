@@ -1,0 +1,32 @@
+# Central Toronto — label-free street poster.
+# Render:  python -m poster_map configs/toronto.yaml --preview
+output: output/toronto.pdf
+
+area:
+  center: [43.6640, -79.3900]   # Queen's Park area: Eglinton (top) to the Toronto Islands (bottom)
+  width_m: 8000                 # Dufferin → Don Valley; height follows the page (~Eglinton → Islands)
+  shape: rect
+  rotation_deg: 0
+
+data:
+  # Overpass works for any area; the BBBike city extract is a reliable fallback.
+  source: pbf
+  pbf: https://download.bbbike.org/osm/bbbike/Toronto/Toronto.osm.pbf
+
+page:
+  size: 18x24in
+  margin: 0.75in
+  frame_width: 0
+
+text:
+  enabled: false
+
+layers:
+  water: true
+  green: true
+  buildings: false
+  waterways: true
+  rail: true
+  roads: true
+
+theme: midnight
