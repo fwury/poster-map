@@ -1,0 +1,33 @@
+# Old Toronto, rotated to "Toronto north": the street grid is square to the page.
+# Toronto's grid runs ~16.4° west of true north (measured from OSM road bearings;
+# the City quotes ~16°), so the map is rotated 16.4° clockwise.
+# Render:  python -m poster_map configs/toronto-old-grid.yaml --preview
+output: output/toronto-old-grid-pine.pdf
+
+area:
+  center: [43.66976, -79.39620]
+  width_m: 18700        # west edge just past the Humber's westernmost bend,
+                        # east edge just past Victoria Park Ave (straight in this frame)
+  rotation_deg: 16.4
+  shape: rect
+
+data:
+  source: pbf
+  pbf: https://download.bbbike.org/osm/bbbike/Toronto/Toronto.osm.pbf
+
+page:
+  size: 24x18in
+  orientation: landscape
+  margin: 0.75in
+
+text:
+  enabled: false
+
+theme: pine
+
+roads:
+  tiers:
+    service:     {width: 0.20}
+    residential: {width: 0.40}
+    tertiary:    {width: 0.75}
+    secondary:   {width: 1.10}
