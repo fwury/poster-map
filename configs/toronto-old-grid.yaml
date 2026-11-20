@@ -5,7 +5,7 @@
 output: output/toronto-old-grid-pine.pdf
 
 area:
-  center: [43.66976, -79.39620]
+  center: [43.66447, -79.39405]   # bottom: tip of Tommy Thompson Park (Leslie Spit); top: just above Lawrence Ave W & Weston Rd
   width_m: 18700        # west edge just past the Humber's westernmost bend,
                         # east edge just past Victoria Park Ave (straight in this frame)
   rotation_deg: 16.4
